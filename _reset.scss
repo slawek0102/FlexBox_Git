@@ -1,0 +1,30 @@
+$CANVAS-MAX-WITH: 1200px; //Main{} Tag in HTML is required.
+
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section {
+  display: flex;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+main {
+  max-width: $CANVAS-MAX-WITH;
+  margin: 0 auto;
+}
+
