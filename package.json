@@ -1,0 +1,19 @@
+{
+  "name": "flexbox_git",
+  "version": "2.0.0",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-livereload": "^3.8.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "Cwiczenie",
+  "dependencies": {
+    "browser-sync": "^2.13.0",
+    "static-server": "^2.0.2"
+  }
+}

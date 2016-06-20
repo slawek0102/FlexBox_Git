@@ -1,75 +1,115 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,800);
 @import 'reset';
 
+$screen_color: #BDAC93;
+$main_color: #B7C5C8;
+
 .flex-header {
-    display: flex;
-    justify-content: flex-end;
-    border: 1px solid red;
-    padding: 5px;
+  display: flex;
+  justify-content: flex-end;
+  border: 1px solid red;
+  padding: 5px;
+  background-color: #FFEEED;
 }
 
 ul {
-    flex-wrap: wrap;
-    display: inline-flex;
-    border: 1px solid black;
-    flex-direction: row-reverse;
+  flex-wrap: wrap;
+  display: inline-flex;
+  border: 1px solid black;
+  flex-direction: row-reverse;
 }
 
 li {
-    padding: 10px 30px;
-    list-style: none;
+  padding: 10px 30px;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .flex-jumbotron {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    border: 1px solid green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border: 1px solid green;
 }
 
 .flex-pictures {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
 }
 
 .flex-picture {
-    max-width: 100%;
-    flex-wrap: wrap;
+  max-width: 100%;
+  flex-wrap: wrap;
 }
 
 .cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card_item {
-    display: flex;
-    width: 300px;
-    padding: 30px 30px 0 30px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  max-width: 250px;
+  padding: 20px 20px 0 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px solid;
 }
 
 footer {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 40px;
-    border: 1px solid red;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40px;
+  border: 1px solid red;
 }
 
 [class*=footer_] {
-    display: flex;
-    padding: 20px;
+  display: flex;
+  padding: 20px;
 }
 
 .footer_company {
-    flex-grow: 3;
+  flex-grow: 3;
 }
+
+html {
+  @extend html;
+  background-color: $screen_color;
+}
+
+h1 {
+  font-family: 'Open Sans', Arial;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+main {
+  @extend main;
+  background: $main_color;
+}
+
+
+
+@media (max-width: 767px) {
+  main h1 {
+    display: none;
+  }
+
+  ul {
+    flex-direction: column;
+  }
+
+  .flex-header {
+    justify-content: center;
+  }
+
+}
+
